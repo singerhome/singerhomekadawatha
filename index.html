@@ -2,112 +2,284 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Singer Home Kadawatha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Singer Home Kadawatha | Trusted Electronics Store</title>
+  <meta name="description" content="Singer Home Kadawatha - Your trusted electronics and home appliance store in Kadawatha.">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    /* Base styles */
+    * {
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
     }
+
+    body {
+      background-color: #f4f4f4;
+      line-height: 1.6;
+    }
+
     header {
-      background-color: #d32f2f;
+      background-color: #0057b8;
       color: white;
-      padding: 15px 20px;
-      text-align: center;
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
     }
-    nav {
-      background-color: #b71c1c;
-      text-align: center;
-      padding: 10px 0;
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
     }
-    nav a {
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      background: url('logo.png') center/cover no-repeat;
+      border-radius: 5px;
+    }
+
+    .logo-text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .logo-subtext {
+      font-size: 14px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
-      font-weight: bold;
     }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .hero {
+      background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero.jpg') center/cover no-repeat;
+      color: white;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-size: 36px;
+    }
+
+    .hero-content p {
+      font-size: 18px;
+    }
+
+    .btn {
+      background: #0057b8;
+      color: white;
+      padding: 10px 20px;
+      margin: 10px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #003f8a;
+    }
+
     section {
-      padding: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
     }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    ul li::before {
+      content: "✅";
+      margin-right: 10px;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .contact-form form input,
+    .contact-form form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-form form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #0057b8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
     footer {
       background: #333;
       color: white;
       text-align: center;
-      padding: 15px;
+      padding: 20px;
     }
-    .products img {
-      width: 100%;
-      max-width: 200px;
-      height: auto;
-      display: block;
-      margin: 10px auto;
+
+    footer a {
+      color: #00aaff;
+      margin: 0 10px;
+      text-decoration: none;
     }
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
+
+    footer a:hover {
+      text-decoration: underline;
     }
-    .card {
-      background: white;
-      padding: 15px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-      border-radius: 8px;
-      width: 220px;
+
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #0057b8;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .hero-content h1 {
+        font-size: 24px;
+      }
+
+      .btn {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
-
-<header>
-  <h1>Singer Home Kadawatha</h1>
-  <p>Your trusted electronics and home appliances store</p>
-</header>
-
-<nav>
-  <a href="#about">About Us</a>
-  <a href="#products">Products</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="about">
-  <h2>About Us</h2>
-  <p>We offer a wide range of genuine Singer products including TVs, refrigerators, washing machines, electric bikes, and more. Visit our Kadawatha showroom today!</p>
-</section>
-
-<section id="products">
-  <h2>Featured Products</h2>
-  <div class="products">
-    <div class="card">
-      <img src="https://via.placeholder.com/200x150?text=TV" alt="TV">
-      <h3>LED TV</h3>
-      <p>32" Smart TV - Rs. 89,990</p>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <div class="logo-icon" role="img" aria-label="Singer Logo"></div>
+        <div>
+          <div class="logo-text">Singer Home</div>
+          <div class="logo-subtext">Kadawatha</div>
+        </div>
+      </div>
+      <nav>
+        <div class="menu-toggle" aria-label="Toggle menu">☰</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="offers.html">Offers</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/200x150?text=Bike" alt="Electric Bike">
-      <h3>Electric Bike</h3>
-      <p>1500W Hub Motor - Rs. 325,000</p>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Kadawatha's Most Trusted Singer Agent</h1>
+      <p>Electronics, home appliances, and more — all under one roof</p>
+      <a href="products.html" class="btn">View Products</a>
+      <a href="contact.html" class="btn">Contact Us</a>
     </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/200x150?text=Fridge" alt="Fridge">
-      <h3>Refrigerator</h3>
-      <p>Double Door - Rs. 129,990</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Singer Home Kadawatha is your trusted Singer agent for all household electronics and appliances. Visit us for quality, service, and reliability.</p>
+    <ul>
+      <li>High-quality products</li>
+      <li>Excellent customer service</li>
+      <li>Affordable prices</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Get in touch with us for product inquiries or support.</p>
+    <div class="contact-form">
+      <form>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p><strong>Address:</strong> No. 123, Main Street, Kadawatha</p>
-  <p><strong>Phone:</strong> 0777 123 456</p>
-  <p><strong>Email:</strong> singer.kadawatha@example.com</p>
-</section>
+  <footer>
+    <p>© 2025 Singer Home Kadawatha. All rights reserved.</p>
+    <p>
+      <a href="tel:+94112345678">+94 11 234 5678</a> |
+      <a href="mailto:info@singerhome.lk">info@singerhome.lk</a> |
+      <a href="https://maps.google.com" target="_blank">Kadawatha, Sri Lanka</a>
+    </p>
+  </footer>
 
-<footer>
-  <p>&copy; 2025 Singer Home Kadawatha. All rights reserved.</p>
-</footer>
-
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('nav ul').classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
