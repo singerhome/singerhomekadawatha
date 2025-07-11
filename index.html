@@ -1,285 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="si">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Singer Home Kadawatha | Trusted Electronics Store</title>
-  <meta name="description" content="Singer Home Kadawatha - Your trusted electronics and home appliance store in Kadawatha.">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <title>G.C.E (O/L) ප්‍රතිඵල - 2024(2025)</title>
   <style>
-    /* Base styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
-    }
-
     body {
-      background-color: #f4f4f4;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #0057b8;
-      color: white;
-      padding: 10px 20px;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-    }
-
-    .header-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .logo-icon {
-      width: 40px;
-      height: 40px;
-      background: url('logo.png') center/cover no-repeat;
-      border-radius: 5px;
-    }
-
-    .logo-text {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 24px;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-
-    .logo-subtext {
-      font-size: 14px;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-    }
-
-    nav ul li a:hover {
-      text-decoration: underline;
-    }
-
-    .menu-toggle {
-      display: none;
-      font-size: 24px;
-      cursor: pointer;
-    }
-
-    .hero {
-      background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero.jpg') center/cover no-repeat;
-      color: white;
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 60px;
-      text-align: center;
-    }
-
-    .hero-content h1 {
-      font-size: 36px;
-    }
-
-    .hero-content p {
-      font-size: 18px;
-    }
-
-    .btn {
-      background: #0057b8;
-      color: white;
-      padding: 10px 20px;
-      margin: 10px;
-      text-decoration: none;
-      border-radius: 5px;
-      display: inline-block;
-    }
-
-    .btn:hover {
-      background: #003f8a;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+      padding: 30px;
       color: #333;
     }
-
-    ul {
-      list-style: none;
-    }
-
-    ul li {
-      margin-bottom: 10px;
-    }
-
-    ul li::before {
-      content: "✅";
-      margin-right: 10px;
-    }
-
-    .contact-form {
-      max-width: 600px;
+    .container {
+      max-width: 700px;
       margin: auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      padding: 30px;
     }
-
-    .contact-form form input,
-    .contact-form form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    .contact-form form button {
-      width: 100%;
-      padding: 10px;
-      background-color: #0057b8;
-      color: white;
-      border: none;
-      border-radius: 5px;
-    }
-
-    footer {
-      background: #333;
-      color: white;
+    h1, h2 {
       text-align: center;
-      padding: 20px;
+      color: #004080;
     }
-
-    footer a {
-      color: #00aaff;
-      margin: 0 10px;
-      text-decoration: none;
+    .info {
+      margin-top: 20px;
+      line-height: 1.8;
     }
-
-    footer a:hover {
-      text-decoration: underline;
+    .subject-results {
+      margin-top: 25px;
     }
-
-    @media (max-width: 768px) {
-      nav ul {
-        display: none;
-        flex-direction: column;
-        background-color: #0057b8;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        padding: 20px;
-      }
-
-      nav ul.active {
-        display: flex;
-      }
-
-      .menu-toggle {
-        display: block;
-      }
-
-      .hero-content h1 {
-        font-size: 24px;
-      }
-
-      .btn {
-        width: 100%;
-      }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px 15px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+    th {
+      background-color: #e6f0ff;
+    }
+    .fail {
+      color: red;
+      font-weight: bold;
+    }
+    .pass {
+      color: green;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="header-container">
-      <div class="logo">
-        <div class="logo-icon" role="img" aria-label="Singer Logo"></div>
-        <div>
-          <div class="logo-text">Singer Home</div>
-          <div class="logo-subtext">Kadawatha</div>
-        </div>
-      </div>
-      <nav>
-        <div class="menu-toggle" aria-label="Toggle menu">☰</div>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="offers.html">Offers</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>SINGER HOME</h1>
-      <p>Electronics, home appliances, and more — all under one roof</p>
-      <a href="products.html" class="btn">View Products</a>
-      <a href="contact.html" class="btn">Contact Us</a>
-    </div>
-  </section>
+<div class="container">
+  <h1>ශ්‍රී ලංකා විභාග දෙපාර්තමේන්තුව</h1>
+  <h2>සාමාන්‍ය පෙළ විභාගය - 2024 (2025)</h2>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Singer Home Kadawatha is your trusted Singer agent for all household electronics and appliances. Visit us for quality, service, and reliability.</p>
-    <ul>
-      <li>High-quality products</li>
-      <li>Excellent customer service</li>
-      <li>Affordable prices</li>
-    </ul>
-  </section>
+  <div class="info">
+    <strong>නම:</strong> USWATHTHA LIYANAGE OSHADHI WIDUBHASHINI PERERA<br>
+    <strong>විභාගය:</strong> G.C.E (O/L) Examination<br>
+    <strong>අවුරුද්ද:</strong> 2024 (2025)<br>
+  </div>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Get in touch with us for product inquiries or support.</p>
-    <div class="contact-form">
-      <form>
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
-        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
+  <div class="subject-results">
+    <h3>විෂය ප්‍රතිඵල</h3>
+    <table>
+      <tr>
+        <th>විෂය</th>
+        <th>ශ්‍රේණිය</th>
+      </tr>
+      <tr>
+        <td>බෞද්ධ ධර්මය</td>
+        <td class="pass">C</td>
+      </tr>
+      <tr>
+        <td>සිංහල භාෂාව හා සාහිත්‍යය</td>
+        <td class="pass">S</td>
+      </tr>
+      <tr>
+        <td>ඉංග්‍රීසි භාෂාව</td>
+        <td class="pass">C</td>
+      </tr>
+      <tr>
+        <td>ගණිතය</td>
+        <td class="fail">W</td>
+      </tr>
+      <tr>
+        <td>ඉතිහාසය</td>
+        <td class="pass">C</td>
+      </tr>
+      <tr>
+        <td>විද්‍යාව</td>
+        <td class="fail">W</td>
+      </tr>
+      <tr>
+        <td>නාට්‍යය හා රඟපෑම් (සිංහල)</td>
+        <td class="pass">C</td>
+      </tr>
+      <tr>
+        <td>පුරවැසි අධ්‍යාපනය</td>
+        <td class="pass">S</td>
+      </tr>
+      <tr>
+        <td>කෘෂිකර්මය හා ආහාර තාක්ෂණය</td>
+        <td class="pass">C</td>
+      </tr>
+    </table>
+  </div>
+</div>
 
-  <footer>
-    <p>© 2025 Singer Home Kadawatha. All rights reserved.</p>
-    <p>
-      <a href="tel:+94112345678">+94 11 234 5678</a> |
-      <a href="mailto:info@singerhome.lk">info@singerhome.lk</a> |
-      <a href="https://maps.google.com" target="_blank">Kadawatha, Sri Lanka</a>
-    </p>
-  </footer>
-
-  <script>
-    document.querySelector('.menu-toggle').addEventListener('click', () => {
-      document.querySelector('nav ul').classList.toggle('active');
-    });
-  </script>
 </body>
 </html>
